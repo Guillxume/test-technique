@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-family: "Hanken Grotesk";
+    letter-spacing: -0.01em;
+    color: #0b0b0c;
+  }
+
+
+  
+  h1 {
+    font-size: 49px;
+    font-weight: 900;
+    line-height: 64px;
+    letter-spacing: -0.01em;
+  }
+  
+  h2 {
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+  }
+
+  a{
+    cursor: pointer;
+  }

@@ -1,0 +1,120 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+.cards .card {
+  list-style: none;
+  border: 1.5px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 16px 24px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+.cards .card .code-promo-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  border: 1.5px dashed #737373;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 8px;
+  cursor: pointer;
+}
+.cards .card .code-promo-btn button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.cards .card .copied-message {
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  background-color: #14c802;
+  border-radius: 8px;
+  color: #fff;
+  padding: 15px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.cards .card .copied-message.visible {
+  opacity: 1; /* Rendez le message visible en ajoutant une classe "visible" */
+}
+.cards .card .description a {
+  color: #0b0b0c;
+}
+.cards .card .description.inactive a {
+  color: #737373;
+}
+.cards .card p {
+  font-weight: 400;
+}
+.cards .card .code-promo-btn.inactive {
+  color: #d9d9d9;
+  border-color: #d9d9d9;
+  cursor: auto;
+}
+.cards .card .code-promo-btn.inactive button {
+  display: none;
+}
+.cards .card .expiration-date {
+  text-align: center;
+}
+.cards .card .expiration-date span {
+  color: #14c802;
+}
+.cards .card .expiration-date.inactive span {
+  color: #e80206;
+}
+.cards .italic-text {
+  font-style: italic;
+}
+.cards p {
+  font-size: 12px;
+}
+.cards p span {
+  font-weight: 700;
+}
+
+.cards-inactive p:not(.expiration-date) {
+  color: #737373;
+}
+
+.infos-cards {
+  display: flex;
+  gap: 16px;
+  padding: 16px 24px 16px 24px;
+  border-radius: 8px;
+  border: 1.5px solid #d9d9d9;
+  background-color: #f2f2f2;
+}
+.infos-cards p {
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+.infos-cards a {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #0b0b0c;
+  transition: 0.3s all ease;
+  color: #fff;
+  text-decoration: none;
+}
+.infos-cards a span {
+  padding: 0 8px;
+  font-weight: 600;
+}
+.infos-cards a:hover {
+  background-color: #14c802;
+}/*# sourceMappingURL=cards.css.map */

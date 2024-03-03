@@ -1,0 +1,224 @@
+@import '../partials/variables.scss';
+
+/* header */
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("/assets/images/background.png");
+    background-size: cover;
+    background-position: center center;
+    height: 480px;
+    padding: 10px;
+  
+    .header-banner {
+      background-color: #0b0b0c;
+      height: $big-size;
+      position: relative;
+      color: $pure-white;
+      font-family: Poppins;
+      font-size: $small-size;
+      font-weight: 900;
+      line-height: $big-size;
+  
+      .tagline {
+        text-align: center;
+      }
+  
+      .select-group {
+        position: absolute;
+        top: 0;
+        right: 64px;
+        display: flex;
+        gap: $very-small-size;
+  
+        .first-select {
+          display: flex;
+          align-items: center;
+        }
+  
+        hr {
+          border: none;
+          border-left: 1px solid #333333;
+          width: 1px;
+        }
+  
+        select {
+          border: none;
+          background-color: transparent;
+          color: $pure-white;
+          font-family: Poppins;
+          font-size: $small-size;
+          font-weight: 900;
+        }
+  
+        img {
+          size: $medium-size;
+        }
+      }
+    }
+  
+    .header-main {
+      display: flex;
+      align-items: center;
+      padding: $medium-size 64px $medium-size 64px;
+      gap: 32px;
+      flex-wrap: wrap;
+  
+      .search-input {
+        display: flex;
+        align-items: center;
+        gap: $very-small-size;
+        flex: 1;
+        background-color: $pure-white;
+        border: 1px solid $gray-darker;
+        padding: $very-small-size;
+        border-radius: $very-small-size;
+  
+        input {
+          border: none;
+          width: 100%;
+          outline: none;
+          font-family: "Hanken Grotesk";
+          font-weight: 400;
+          font-size: $medium-size;
+        }
+  
+        input::placeholder {
+          font-family: "Hanken Grotesk";
+          font-weight: 400;
+          font-size: $medium-size;
+          color: $gray-darker;
+        }
+      }
+  
+      .help {
+        display: flex;
+        align-items: center;
+        color: $pure-white;
+  
+        span {
+          padding: 0px $very-small-size;
+        }
+      }
+    }
+  
+    .header-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 0px 64px $very-small-size 64px;
+      gap: $very-small-size;
+      color: $pure-white;
+  
+      p {
+        text-transform: uppercase;
+        padding: 0px $medium-size;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        li {
+            a {
+                text-decoration: none;
+                color: $pure-white;
+                font-weight: 400;
+                padding: 0px $medium-size;
+              }
+        }
+      }
+  
+      
+  
+      a:nth-child(4) {
+        color: #ff64c4;
+      }
+  
+      a:nth-child(5) {
+        display: flex;
+        align-items: center;
+      }
+    }
+    
+    // TODO : Mettre les menu dans une nav mobile géré avec le btn burger
+
+    @media (max-width:425px){
+      .header-nav{
+        display: none;
+      }
+      .header-text p{
+        display: none;
+      }
+  
+    }
+  
+    .breadcrumb {
+      padding: $medium-size 64px;
+  
+      .tree-structure {
+        display: flex;
+        align-items: center;
+        padding: 0 $very-small-size;
+        border-radius: 99px;
+        gap: 4px;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        width: max-content;
+  
+        a {
+          display: flex;
+          align-items: center;
+          font-size: $small-size;
+          font-weight: 400;
+          text-decoration: none;
+          color: $gray-darker;
+        }
+  
+        a:nth-child(1) {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
+  
+        a:last-child {
+          color: $pure-white;
+        }
+  
+        img {
+          fill: $gray-darker;
+          width: $medium-size;
+        }
+      }
+    }
+  
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      h1 {
+        margin-bottom: $medium-size;
+      }
+  
+      h2 {
+        font-size: $medium-size;
+        font-weight: 600;
+        line-height: $big-size;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: $big-size;
+      }
+  
+      p {
+        padding: $medium-size;
+        border-radius: $very-small-size;
+        max-width: 107$very-small-size;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.01);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+      }
+    }
+  }

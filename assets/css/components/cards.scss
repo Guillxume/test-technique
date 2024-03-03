@@ -1,0 +1,148 @@
+@import '../partials/variables.scss';
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: $medium-size;
+  
+    .card {
+      list-style: none;
+      border: 1.5px solid $gray-lighter;
+      border-radius: $very-small-size;
+      padding: $medium-size $big-size $medium-size $big-size;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $medium-size;
+      position: relative;
+  
+      .code-promo-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $very-small-size $medium-size $very-small-size $medium-size;
+        border-radius: $very-small-size;
+        border: 1.5px dashed $gray-darker;
+        width: fit-content;
+        gap: $very-small-size;
+        cursor: pointer;
+  
+        button {
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+        }
+        
+  
+      }
+  
+      .copied-message {
+        position: absolute;
+        top: -50px;
+        left: 10px;
+        background-color: $accentuation;
+        border-radius: $very-small-size;
+        color: $pure-white;
+        padding: 15px;
+        font-size: $medium-size;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        
+      }
+  
+      .copied-message.visible {
+        opacity: 1; /* Rendez le message visible en ajoutant une classe "visible" */
+      }
+  
+      .description {
+        a {
+          color: $black;
+        }
+      }
+  
+      .description.inactive {
+        a {
+          color: $gray-darker;
+        }
+      }
+  
+      p {
+        font-weight: 400;
+      }
+  
+      .code-promo-btn.inactive {
+        color: $gray-lighter;
+        border-color: $gray-lighter;
+        cursor: auto;
+  
+        button {
+          display: none;
+        }
+      }
+  
+      .expiration-date {
+        text-align: center;
+        span {
+          color: $accentuation;
+        }
+      }
+  
+      .expiration-date.inactive {
+        span {
+          color: #e80206;
+        }
+      }
+    }
+  
+    .italic-text {
+      font-style: italic;
+    }
+  
+    p {
+      font-size: 12px;
+    
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  
+  .cards-inactive p:not(.expiration-date) {
+    color: $gray-darker;
+  }
+  
+  .infos-cards {
+    display: flex;
+    gap: $medium-size;
+    padding: $medium-size $big-size $medium-size $big-size;
+    border-radius: $very-small-size;
+    border: 1.5px solid $gray-lighter;
+    background-color: $white;
+  
+    p {
+      font-weight: 400;
+      line-height: $big-size;
+      letter-spacing: -0.01em;
+      text-align: left;
+    }
+  
+    a {
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      padding: $very-small-size;
+      border-radius: $very-small-size;
+      background-color: $black;
+      transition: .3s all ease;
+      color: $pure-white;
+      text-decoration: none;
+  
+      span {
+        padding: 0 $very-small-size;
+        font-weight: 600;
+      }
+    }
+  
+    a:hover{
+      background-color: $accentuation;
+    }
+  }

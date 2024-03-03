@@ -1,0 +1,16 @@
+/* main-content */
+@import 'partials/commons.scss';
+@import 'components/header.scss';
+@import 'components/promotions.scss';
+@import 'components/cards.scss';
+@import'components/reassurrance.scss';
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    gap: 64px;
+  }
