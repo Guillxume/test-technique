@@ -1,0 +1,78 @@
+@import '../partials/variables.scss';
+footer{
+    background-color: $black;
+
+    a{
+        color: $pure-white;
+        text-decoration: none;
+        cursor:pointer;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            bottom: -3px;
+            height: 2px;
+            background-color: $pure-white;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -ms-transition: all .3s ease;
+            -o-transition: all .3s ease;
+}
+
+            &:hover::after{
+                width: 100%;
+            }
+    }
+
+    .new{
+        margin-left: 5px;
+        background-color: #e80206;
+        color: $pure-white;
+        padding: 3px 5px;
+        font-size: 12px;
+        line-height: -1px;
+        font-weight: 900;
+    }
+
+    .links-footer{
+        display: flex;
+        // TODO : en responsive tout mettre dans des onglets cliquables
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 100px;
+        width: 90%;
+        margin: auto;
+
+        .links-block{
+            margin-top: $big-size;
+
+            h3{
+                color:$pure-white;
+                margin-bottom: $medium-size;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    bottom: -8px;
+                    height: 3px;
+                    background-color: #1f1f1f;
+                  }
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap:$medium-size;
+            }
+        }
+
+        
+    }
+}
