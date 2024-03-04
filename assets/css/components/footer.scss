@@ -7,6 +7,7 @@ footer{
         text-decoration: none;
         cursor:pointer;
         position: relative;
+        font-size: 12px;
         &::after {
             content: "";
             display: block;
@@ -14,7 +15,7 @@ footer{
             left: 0;
             width: 0;
             bottom: -3px;
-            height: 2px;
+            height: 1px;
             background-color: $pure-white;
             transition: all .3s ease;
             -webkit-transition: all .3s ease;
@@ -54,6 +55,9 @@ footer{
                 color:$pure-white;
                 margin-bottom: $medium-size;
                 position: relative;
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 16px;
 
                 &::after {
                     content: "";
@@ -69,7 +73,7 @@ footer{
             ul{
                 display: flex;
                 flex-direction: column;
-                gap:$medium-size;
+                gap:10px;
             }
         }
 

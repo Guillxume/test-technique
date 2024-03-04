@@ -195,6 +195,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: auto;
+      width: 100%;
+      max-width: 1078px;
   
       h1 {
         margin-bottom: $medium-size;

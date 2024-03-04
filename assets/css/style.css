@@ -206,6 +206,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
+  width: 100%;
+  max-width: 1078px;
 }
 .background .header-text h1 {
   margin-bottom: 16px;
@@ -386,6 +389,7 @@ footer a {
   text-decoration: none;
   cursor: pointer;
   position: relative;
+  font-size: 12px;
 }
 footer a::after {
   content: "";
@@ -394,7 +398,7 @@ footer a::after {
   left: 0;
   width: 0;
   bottom: -3px;
-  height: 2px;
+  height: 1px;
   background-color: #fff;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -429,6 +433,9 @@ footer .links-footer .links-block h3 {
   color: #fff;
   margin-bottom: 16px;
   position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
 }
 footer .links-footer .links-block h3::after {
   content: "";
@@ -443,7 +450,7 @@ footer .links-footer .links-block h3::after {
 footer .links-footer .links-block ul {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
 .content {
