@@ -2,6 +2,26 @@
 footer{
     background-color: $black;
 
+    h3{
+        color:$pure-white;
+        margin-bottom: $medium-size;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 16px;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: -8px;
+            height: 3px;
+            background-color: #1f1f1f;
+          }
+    }
+
     a{
         color: $pure-white;
         text-decoration: none;
@@ -50,26 +70,6 @@ footer{
 
         .links-block{
             margin-top: $big-size;
-
-            h3{
-                color:$pure-white;
-                margin-bottom: $medium-size;
-                position: relative;
-                text-transform: uppercase;
-                font-size: 12px;
-                line-height: 16px;
-
-                &::after {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    left: 0;
-                    width: 100%;
-                    bottom: -8px;
-                    height: 3px;
-                    background-color: #1f1f1f;
-                  }
-            }
             ul{
                 display: flex;
                 flex-direction: column;
